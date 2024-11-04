@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 
 body {
@@ -26,15 +27,65 @@ body {
 	transform: scale(1.02); /* Slightly enlarge container on hover */
 }
 
+/* main styling starts */
+
+.main-container {
+	padding: 30px;
+}
+
 .logo-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
+	margin-bottom: 10px;
 }
 
 .logo {
 	max-width: 120px; /* Make the logo slightly larger */
 }
+
+.logo-container h2 {
+	font-size: 1.5em;
+}
+
+.analyzing-process {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.receiving-data,
+.processing-data,
+.finishing-data{
+	position: relative;
+	width: 100%;
+	height: 5em;
+	background-color: #2b5e35;
+	border-radius: 1.5rem;
+	color: #fff;
+}
+
+.receiving-data::before,
+.processing-data::before,
+.finishing-data::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	/* width: calc(var(--width, 0) * 1%); */
+	min-width: 2rem;
+	max-width: calc(100% - 1em);
+	background-color: #2b5e35;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+
+/* main styling ends */
 
 .bg_image-container img {
 	height: 200px;
@@ -61,11 +112,16 @@ body {
 	margin-top: 20px;
 }
 
-.auth-button {
+.button-container .auth-button{
+	width: 50%;
+}
+
+.auth-button,
+.main-container button {
 	padding: 12px 24px; /* Slightly larger button for better touch */
 	background-color: #19381f; /* Upwork color */
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
 	color: white;
 	cursor: pointer;
 	font-size: 16px;
@@ -73,7 +129,12 @@ body {
 	transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
 }
 
-.auth-button:hover {
+.auth-button a{
+	color: #fff;
+}
+
+.auth-button:hover,
+.main-container button:hover {
 	background-color: #2b5e35; /* Lighter color on hover */
 	transform: translateY(-2px); /* Slight upward movement on hover */
 }
@@ -81,3 +142,65 @@ body {
 .auth-button:active {
 	transform: translateY(0); /* Reset position on click */
 }
+
+/* sign up start */
+.sign-up_container{
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #fff;
+}
+
+.information-section{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.entryarea{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.entryarea input{
+	width: 100%;
+	outline: none;
+	font-size: 2.2em;
+	padding: 0 20px;
+	line-height: 40px;
+	border-radius: 10px;
+	border: 2px solid #2b5e3573;
+	background-color: transparent;
+	transition: 0.1s ease;
+	font-size: 1.2em;
+	z-index: 1111;
+}
+
+.entryarea input:focus,
+.entryarea input:valid{
+	color: #19381f;
+	border: 2px solid #2b5e35;
+}
+
+.agreement-section{
+	display: flex;
+	justify-content: start;
+	gap: 10px;
+	text-align: start;
+	margin-top: 10px;
+}
+
+.agreement-section input{
+	width: 30px;
+}
+
+.sign-up_btn .auth-button{
+	width: 100%;
+}
+
+/* sign up input */
+
