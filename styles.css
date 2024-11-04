@@ -1,81 +1,83 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f7f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-radius: 10px !important;
+	font-family: Arial, sans-serif;
+	background-color: #f2f7f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	border-radius: 10px !important;
 }
 
 .container {
-    padding: 30px 10px; /* Increased padding for more breathing space */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 400px; /* Adjustable width */
-    transition: transform 0.2s; /* Smooth scaling effect on hover */
+	padding: 30px 10px; /* Increased padding for more breathing space */
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 400px; /* Adjustable width */
+	transition: transform 0.2s; /* Smooth scaling effect on hover */
 }
 
 .container:hover {
-    transform: scale(1.02); /* Slightly enlarge container on hover */
+	transform: scale(1.02); /* Slightly enlarge container on hover */
 }
 
 .logo-container {
-    display: flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
 }
 
 .logo {
-    max-width: 120px; /* Make the logo slightly larger */
+	max-width: 120px; /* Make the logo slightly larger */
 }
 
 .bg_image-container img {
-    width: 300px;
+	height: 200px;
 }
 
 .title-container {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .title-container h1 {
-    font-size: 24px; /* Increase title font size */
-    color: #333; /* Darker color for better contrast */
+	font-size: 24px; /* Increase title font size */
+	color: #333; /* Darker color for better contrast */
 }
 
 .description-container {
-    margin-bottom: 25px;
-    padding: 20px;
-    color: #555;
-    font-size: 14px; /* Standardize description font size */
-    line-height: 1.5; /* Improve readability */
+	margin-bottom: 25px;
+	padding: 20px;
+	color: #555;
+	font-size: 14px; /* Standardize description font size */
+	line-height: 1.5; /* Improve readability */
 }
 
 .button-container {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .auth-button {
-    padding: 12px 24px; /* Slightly larger button for better touch */
-    background-color: #19381F; /* Upwork color */
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10PX;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+	padding: 12px 24px; /* Slightly larger button for better touch */
+	background-color: #19381f; /* Upwork color */
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 10px;
+	transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
 }
 
 .auth-button:hover {
-    background-color: #d6fb1e; /* Darker color on hover */
-    transform: translateY(-2px); /* Slight upward movement on hover */
+	background-color: #2b5e35; /* Lighter color on hover */
+	transform: translateY(-2px); /* Slight upward movement on hover */
 }
 
 .auth-button:active {
-    transform: translateY(0); /* Reset position on click */
+	transform: translateY(0); /* Reset position on click */
 }
