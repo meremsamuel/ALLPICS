@@ -7,20 +7,20 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f2f7f2;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	/* height: 100vh; */
 	border-radius: 10px !important;
 }
 
 .container {
 	padding: 30px 10px; /* Increased padding for more breathing space */
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 4px -12px 30px #004b2371 inset;
 	text-align: center;
 	width: 400px; /* Adjustable width */
-	transition: transform 0.2s; /* Smooth scaling effect on hover */
+	transition: transform 0.2s; /* Smooth scaling red effect on hover */
 }
 
 .container:hover {
@@ -30,14 +30,16 @@ body {
 /* main styling starts */
 
 .main-container {
-	padding: 30px;
+	padding: 0;
 }
 
 .logo-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	padding: 10px;
 }
 
 .logo {
@@ -48,42 +50,47 @@ body {
 	font-size: 1.5em;
 }
 
+.main-container button {
+	height: 35px;
+    width: 100px;
+	padding: 10px !important;
+}
+
+.main-container button p {
+	font-size: 0.7rem;
+}
+
 .analyzing-process {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
-	margin-bottom: 10px;
-}
-
-.receiving-data,
-.processing-data,
-.finishing-data{
-	position: relative;
+	gap: 15px;
+	text-align: start;
 	width: 100%;
-	height: 5em;
-	background-color: #2b5e35;
-	border-radius: 1.5rem;
-	color: #fff;
+	margin-bottom: 20px;
+	padding: 0 20px 0 20px;
 }
 
-.receiving-data::before,
-.processing-data::before,
-.finishing-data::before {
-	content: attr(data-label);
+.data {
+	padding: 0 20px;
+}
+
+.data p:nth-child(1) {
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.data ul {
+	font-size: 1em;
+	margin-left: 20px;
+}
+
+.end-button_container {
 	display: flex;
-	align-items: center;
-	position: absolute;
-	left: .5em;
-	top: .5em;
-	bottom: .5em;
-	/* width: calc(var(--width, 0) * 1%); */
-	min-width: 2rem;
-	max-width: calc(100% - 1em);
-	background-color: #2b5e35;
-	border-radius: 1em;
-	padding: 1em;
+	justify-content: flex-end;
+	width: 90%;
+	margin-bottom: 20px;
 }
-
 
 /* main styling ends */
 
@@ -145,11 +152,14 @@ body {
 
 /* sign up start */
 .sign-up_container{
-	padding: 40px;
+	padding: 0;
+}
+
+.sign-up_container main {
+	padding: 0 40px 40px 40px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	background-color: #fff;
 }
 
 .information-section{
